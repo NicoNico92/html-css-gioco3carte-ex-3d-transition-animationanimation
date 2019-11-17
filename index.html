@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>3D CSS Transition e Animation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+
+            <!-- TITOLO -->
+            <!-- TITOLO -->
+            <!-- TITOLO -->
+
+            <div class="container center">
+                <h1 class="white pb-4 ">3D CSS & CSS Animation</h1>
+            </div>
+
+            <!-- ESEMPI BASE -->
+            <!-- ESEMPI BASE -->
+            <!-- ESEMPI BASE -->
+
+            <div class="container high">
+                <div class="col-25">
+                    <p class="esempio1">Perspective l’elemento stesso ad ottenere l’effetto prospettiva ma suo figlio</p>
+                </div>
+                <div class="col-25">
+                    <p class=" esempio2">Transform: perspective l’elemento stesso ad ottenere l’effetto prospettiva. </p>
+                </div>
+                <div class="col-25 esempio3">
+                    <p>Transition+transformation: l'elemento agisce subisce modifiche in caso di :hover</p>
+                </div>
+                <div class="col-25 esempio4">
+                    <p>Transition+transform: l'elemento autonomamente mostra un 'effetto a comparsa' </p>
+                </div>
+                <div class="col-3">
+                <div class="contenitore-3d">
+                    <div class="blocco verde mt-5 white">
+                        <p>IO RUOTO E TRASLO IN RELAZIONE AL MIO CONTENITORE</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-4">
+                <div class="blocco arancione mt-20">
+                    <p>IO RUOTO <br> E TRASLO <br> IN RELAZIONE <br> A ME <br> STESSO</p>
+                </div>
+                <div class="blocco rosso white clearfix">
+                    <p>SE FAI :hover SU DI ME: RUOTO, MI INGRANDISCO E MI CAPOVOLGO</p>
+                </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="blocco blu white">
+                        <p>IO PRIMA NON C'ERO</p>
+                        </div>
+
+                </div>
+
+                <!-- INTERMEZZO -GIOCO DELLE 3 CARTE -->
+                <!-- INTERMEZZO -GIOCO DELLE 3 CARTE -->
+                <!-- INTERMEZZO -GIOCO DELLE 3 CARTE -->
+
+            </div>
+            <div class="container clearfix center">
+                <div class="intermezzo-title p-100-250">
+                    <h1>INTERMEZZO - IL GIOCO DELLE 3 CARTE</h1>
+                    <h2>(prova a seguire la regina)</h2>
+                </div>
+                <div class="gioco-carte">
+                <div class="scene scene--card">
+                <div class="card card-animation-1">
+                <div class="card__face card__face--front front1"></div>
+                <div class="card__face card__face--back back1"></div>
+                </div>
+                </div>
+                <div class="scene scene--card">
+                <div class="card card-animation-2">
+                <div class="card__face card__face--front front2"></div>
+                <div class="card__face card__face--back back2"></div>
+                </div>
+                </div>
+                <div class="scene scene--card">
+                <div class="card card-animation-3">
+                <div class="card__face card__face--front front3"></div>
+                <div class="card__face card__face--back front3"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- LETTERA b -->
+            <!-- LETTERA b -->
+            <!-- LETTERA b -->
+
+            <div class="container high letter-container">
+                <h1>CSS Animation</h1>
+                <div class="box">
+                    <div class="letter">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-6 pb-4">
+                <p>
+                   Descrizione dell'animazione:</p>
+                  <p> 0%: si specifica il punto di partenza, altrimenti la partita risulterà scattosa (l'elemento sparirà da <p> dove si trova e ricomparirà alle prime istruzioni utili); </p>
+                  <p> 10%: rotazione 3D (1,1,1,360deg);</p>
+                  <p> 20%: rotazione Z di 180 gradi (da notare che viene mantenuta anche in seguito a rotazione avvenuta);</p>
+                  <p> 30%: rotazione X di 180 gradi (non riesce perchè aveva troppe indicazioni, dovrebbe capovolgersi ruotando in avanti, invece anticipa addirittura la rotazione Y);</p>
+                  <p> 40%: rotazione Y di 180 gradi (invece recupera da rotazione Z);</p>
+                  <p> 50%: traslate Z di -300px (e contemporaneamte recupera da posizione Y e torna la b nella posizione originale);</p>
+                  <p> 60%: traslate Z di 300px;</p>
+                  <p> 70%: rotazione X di 3600 gradi e traslazione di -300px --> in questo modo la lettera diventa ingestibile ma con un pò di aggiustamenti (e pazienza) potreste ottenere effetti sorprendenti... Di fatto una rotazione del genere si trascina fino al 100% contando anche la rotazione inversa</p>
+                  <p>Nota: in realtà si potrebbero aumentare gli step a volontà...</p>
+            </div>
+        </main>
+    </body>

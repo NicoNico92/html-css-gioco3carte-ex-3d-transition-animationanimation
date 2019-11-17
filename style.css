@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+/* REGOLE GENERALI */
+/* REGOLE GENERALI */
+
+body {
+    margin-top: 80px;
+    background: rgb(25,25,12);
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.high {
+    height: 500px;
+}
+
+.pt-6 {
+    padding-top: 3%;
+}
+
+.pb-4 {
+    padding-bottom: 4%;
+}
+
+.p-100-250 {
+    padding: 100px 0 250px;
+}
+
+.col-25 {
+    width: 25%;
+    height: 200px;
+    display: inline-block;
+    margin-left:;
+    float: left;
+}
+
+.col-3 {
+    width: 30%;
+    display: inline-block;
+    margin-left:;
+    float: left;
+    height: 300px;
+}
+
+.col-4 {
+    width:40%;
+    display: inline-block;
+    margin-left:;
+    float: left;
+    height: 300px;
+}
+
+.clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.center {text-align: center;}
+
+/* ESEMPI BASE */
+/* ESEMPI BASE */
+/* ESEMPI BASE */
+
+.esempio1 {
+    padding: 95px 40px 0 0;
+
+}
+
+.esempio2 {
+    padding: 55px 50px 0 20px;
+}
+
+.esempio3 {
+    padding: 120px 0 0 0;
+}
+
+.esempio4 {
+    padding: 130px 0 0 60px;
+}
+
+.contenitore-3d {
+    width: 300px;
+    height: 300px;
+    border: 5px solid gold;
+    perspective: 200px;
+}
+
+.blocco {
+    width: 150px;
+    height: 150px;
+    padding: 0.5%;
+    display: inline-block;
+}
+
+
+.verde {
+    background-color: green;
+    position: absolute;
+    transform: rotateY(45deg);
+}
+
+.arancione {
+    background-color: orange;
+    transform: perspective(100px) rotateY(45deg);
+}
+
+.rosso {
+  width: 150px;
+  height: 150px;
+  background: red;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+  float: right;
+}
+
+.rosso:hover {
+  width: 185px;
+  height: 185px;
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+}
+
+.blu {
+    background-color: blue;
+    transform: translate3d(0,0px,-100px) rotate3d(1,1,1,360deg);
+    transition: ease 1s;
+    transition-delay: 1s;
+    transition-duration: 3s;
+    float: right;
+}
+
+.rosso {
+    background-color: red;
+}
+
+/* INTERMEZZO - GIOCO DELLE 3 CARTE */
+/* INTERMEZZO - GIOCO DELLE 3 CARTE */
+/* INTERMEZZO - GIOCO DELLE 3 CARTE */
+
+
+.scene {
+  width: 174px;
+  height: 260px;
+  border:;
+  margin: 40px 0;
+  perspective: 600px;
+  display: inline-block;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+  animation-name: example0;
+  animation-duration: 15s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: red;
+  border-radius: 10px;
+}
+
+.front1 {
+    background-image: url("Images/jokerrosso.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.front2 {
+    background-image: url("Images/regina1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.front3 {
+    background-image: url("Images/jokernero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-animation-1 {
+    animation-name: card-animation-1;
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+.card-animation-2 {
+    animation-name: card-animation-2;
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+.card-animation-3 {
+    animation-name: card-animation-3;
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+@keyframes card-animation-1 {
+  10%   {background-color:; left:0px; top:-0px;transform: translateZ(0px) rotateY(0deg);}
+  13%   {background-color:; left:-180px; top:-0px;transform: translateZ(0px) rotateY(180deg);}
+  30%  {background-color:; top: 0px; left:-180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  33%  {background-color:; top: -270px; left:-180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  36%  {background-color:; top: -270px; left:180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  39%  {background-color:; top: 0; left:180px; transform: translateZ(0px) rotateY(180deg);}
+  42%  {background-color:; left:180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  45%  {background-color:; left:180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  48%  {background-color:; left:180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  51%  {background-color:; left:-0px; top:;transform: translateZ(0px) rotateY(180deg);}
+  54%  {background-color:; left:-180px; top:; transform: rotateY(180deg);}
+  /* 80%  {background-color:; left:0px; top:; transform: rotateY(180deg);} */
+  80%  {background-color:; left:-180px; top:; transform: rotateY(180deg);}
+  90%  {background-color:; left: 0px; top:; transform: rotateY(0deg);}
+  100%  {background-color:; left:0px; top:; transform: rotateY(0deg);}
+}
+@keyframes card-animation-2 {
+  10%   {background-color:; left:0px; top:;transform: translateZ(0px) rotateY(0deg);}
+  13%   {background-color:; left:-180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  30%  {background-color:; top: 0px; left: -180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  33%  {background-color:; top: 0px; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  36%  {background-color:; top: -270px; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  39%  {background-color:; top: -270px; left:0px; transform: translateZ(0px) rotateY(180deg);}
+  42%  {background-color:; top: 0; left:0px; top:;transform: translateZ(0px) rotateY(180deg);}
+  45%  {background-color:; left:-180px; top:;transform: translateZ(0px) rotateY(180deg);}
+  48%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  51%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  80%  {background-color:; left:0px; top:; transform: rotateY(180deg);}
+  90%  {background-color:; left:180px; top:; transform: rotateY(0deg);}
+  100%  {background-color:; left:0px; top:; transform: rotateY(0deg);}
+}
+@keyframes card-animation-3 {
+  10%   {background-color:; left:0px; top:-0px;transform: translateZ(0px) rotateY(0deg);}
+  13%   {background-color:; left:-180px; top:-0px;transform: translateZ(0px) rotateY(180deg);}
+  27%   {background-color:; left:-180px; top:-0px;transform: translateZ(0px) rotateY(180deg);}
+  30%  {background-color:; top: 0px; left: -360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  33%  {background-color:; top: 0px; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  36%  {background-color:; top: 0px; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  39%  {background-color:; top: 0; left:-360px; transform: translateZ(0px) rotateY(180deg);}
+  42%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  45%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  48%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  51%  {background-color:; left:-360px; top:;transform: translateZ(0px) rotateY(180deg);}
+  54%  {background-color:; left:-360px; top:; transform: rotateY(180deg);}
+  80%  {background-color:; left:-360px; top:; transform: rotateY(180deg);}
+  90%  {background-color:; left:-180px; top:; transform: rotateY(0deg);}
+  100%  {background-color:; left:0px; top:; transform: rotateY(0deg);}
+}
+
+.testo1 {
+    animation-name: example7;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+.card__face--back {
+  background: #1D2B45;
+  background-image: url("Images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+/* LETTERA b */
+/* LETTERA b */
+/* LETTERA b */
+
+.box {
+    width: 90%;
+    height: 80%;
+    background-color: orange;
+    border: 5px solid lightblue;
+    margin: 0 auto;
+    margin-top: 2%;
+    perspective: 600px;
+}
+
+.letter-container {
+    background-color: green;
+}
+
+.letter {
+    height: 120px;
+    width: 75px;
+    top: 20px;
+    left: 20px;
+    background-image: url("Images/SIMBOLOb50X100.png");
+    background-size: cover;
+    position: relative;
+    animation-name: exampleb;
+    animation-duration: 60s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exampleb {
+    0%   {background-color:; left:10px; top:10px;}
+    10%  {background-color:; left:1000px; top:10px; transform: rotate3d(1,1,1,360deg);}
+    20%  {background-color:; left:1000px; top:200px; transform: rotateZ(180deg);}
+    30%  {background-color:; left:0px; top:200px; transform: rotateX(180deg);}
+    40%  {background-color:; left:0px; top:10px; transform: rotateY(180deg);}
+    50%  {background-color:; left:1000px; top: 0px; transform: translateZ(-300px);}
+    60%  {background-color:; left:800px; top: 200px; transform: translateZ(300px);}
+    70%  {background-color:; left:10px; top: 200px; transform: rotateX(3600deg) translateZ(-300px);}
+    80%  {background-color:; left:1000px; top: 200px;}
+    90%  {background-color:; left:10px; top: 200px;};
+    100%  {background-color:; left:1000px; top: 200px;};
+   }
